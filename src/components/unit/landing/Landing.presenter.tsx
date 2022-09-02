@@ -8,7 +8,7 @@ export default function LandingPresenterPage() {
         <Landing.ReTitle>실시간 인기 애견카페</Landing.ReTitle>
         <Landing.ReCafeWrap>
           <Landing.CafeDetail>
-            {/* <Row>
+            <Row>
               <Col xs={24} sm={24} md={12} lg={12} xl={12}>
                 <Landing.CafeImg src="/images/cafe.jpeg" />
               </Col>
@@ -29,8 +29,8 @@ export default function LandingPresenterPage() {
                   </Landing.CafeDetailInfo>
                 </Landing.CafeInfoWrap>
               </Col>
-            </Row> */}
-            {/* <Landing.MoveToCafe src="/images/movecafe.png" /> */}
+            </Row>
+            <Landing.MoveToCafe src="/images/movecafe.png" />
           </Landing.CafeDetail>
         </Landing.ReCafeWrap>
       </Landing.ReCafeList>
