@@ -4,7 +4,6 @@ import { breakPoints } from "../../commons/styles/media";
 export const Wrapper = styled.div`
   height: 968px;
   width: 100%;
-  border: 1px solid black;
   display: flex;
   flex-direction: row;
   overflow-y: hidden;
@@ -25,7 +24,6 @@ export const LoginPartWrap = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 2px solid black;
   width: 768px;
   padding: 0rem 3rem;
   @media ${breakPoints.mobile} {
