@@ -1,20 +1,25 @@
+import Link from "next/link";
 import * as Header from "./Header.styles";
 
 export default function LayoutHeader() {
   return (
     <Header.Container>
       <Header.Wrapper>
-        <Header.Logo>
-          <img
-            style={{
-              width: "8rem",
-            }}
-            src="/images/logo.png"
-          />
-        </Header.Logo>
+        <Link href="/">
+          <Header.Logo src="/images/logo.svg" />
+        </Link>
         <Header.MenuContainer>
-          <Header.Signin>로그인</Header.Signin>
-          <Header.Signup>회원가입</Header.Signup>
+          <Link href="/cafe">
+            <Header.Menu>애견카페 정보</Header.Menu>
+          </Link>
+          <Header.LoginContainer>
+            <Link href="/login">
+              <Header.Login>로그인</Header.Login>
+            </Link>
+            <Link href="/signup">
+              <Header.Login>회원가입</Header.Login>
+            </Link>
+          </Header.LoginContainer>
         </Header.MenuContainer>
       </Header.Wrapper>
     </Header.Container>
