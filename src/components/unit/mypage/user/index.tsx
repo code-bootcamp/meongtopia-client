@@ -19,7 +19,6 @@ const SideBar = styled.div`
 `;
 const Menu = styled.div`
   cursor: pointer;
-
   :hover {
     background-color: #ffe812;
   }
