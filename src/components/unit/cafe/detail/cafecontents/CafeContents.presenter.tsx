@@ -68,10 +68,10 @@ export default function DetailCafeContentsUI() {
         <CafeContents.PaymentBtn>결제하기</CafeContents.PaymentBtn>
         <CafeContents.Title>예약 가능 날짜</CafeContents.Title>
         <CafeContents.CalendarWrapper>
-          <CafeContents.Cal
+          {/* <CafeContents.Cal
             locale="ko"
             formatDay={(locale, date) => moment(date).format("DD")}
-          />
+          /> */}
         </CafeContents.CalendarWrapper>
         <CafeContents.Map>
           <div

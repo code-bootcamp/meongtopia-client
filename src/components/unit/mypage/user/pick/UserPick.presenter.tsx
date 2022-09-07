@@ -11,11 +11,8 @@ export default function MyPageUserPickUI() {
         </UserPick.SortSelect>
       </UserPick.SortWrapper>
       <UserPick.ListContainer>
-        <UserPick.ImgWrapper>
-          <UserPick.Img src="/images/cafe2.jpeg" />
-        </UserPick.ImgWrapper>
+        <UserPick.Img src="/images/cafe2.jpeg" />
         <UserPick.DetailContainer>
-          <UserPick.Info>상세정보</UserPick.Info>
           <UserPick.Title>상수역 멍멍 애견카페</UserPick.Title>
           <UserPick.RatingContainer>
             <UserPick.RatingLabel>별점</UserPick.RatingLabel>
@@ -27,11 +24,8 @@ export default function MyPageUserPickUI() {
         </UserPick.DetailContainer>
       </UserPick.ListContainer>
       <UserPick.ListContainer>
-        <UserPick.ImgWrapper>
-          <UserPick.Img src="/images/cafe2.jpeg" />
-        </UserPick.ImgWrapper>
+        <UserPick.Img src="/images/cafe2.jpeg" />
         <UserPick.DetailContainer>
-          <UserPick.Info>상세정보</UserPick.Info>
           <UserPick.Title>상수역 멍멍 애견카페</UserPick.Title>
           <UserPick.RatingContainer>
             <UserPick.RatingLabel>별점</UserPick.RatingLabel>
@@ -43,11 +37,8 @@ export default function MyPageUserPickUI() {
         </UserPick.DetailContainer>
       </UserPick.ListContainer>
       <UserPick.ListContainer>
-        <UserPick.ImgWrapper>
-          <UserPick.Img src="/images/cafe2.jpeg" />
-        </UserPick.ImgWrapper>
+        <UserPick.Img src="/images/cafe2.jpeg" />
         <UserPick.DetailContainer>
-          <UserPick.Info>상세정보</UserPick.Info>
           <UserPick.Title>상수역 멍멍 애견카페</UserPick.Title>
           <UserPick.RatingContainer>
             <UserPick.RatingLabel>별점</UserPick.RatingLabel>

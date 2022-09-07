@@ -26,8 +26,6 @@ export const ListContainer = styled.div`
   margin-bottom: 30px;
 `;
 
-export const ImgWrapper = styled.div``;
-
 export const Img = styled.img`
   width: 400px;
   height: 300px;
@@ -40,8 +38,6 @@ export const DetailContainer = styled.div`
   margin-left: 60px;
   margin-top: 20px;
 `;
-
-export const Info = styled.h3``;
 
 export const Title = styled.h2``;
 
