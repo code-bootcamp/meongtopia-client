@@ -38,21 +38,31 @@ export default function CafeListUI(props: ICafeListUIProps) {
   }
 
   // 조건별 태그 필터링
-  if (props.conditionActive.length > 1) {
-    let dataCondition = data;
+  // if (props.conditionActive.length > 1) {
+  //   let dataCondition = data;
 
-    for (let i = 1; i < props.conditionActive.length; i++) {
-      dataCondition = dataCondition?.filter((el) => {
-        for (let j = 0; j < el.storeTag.length; j++) {
-          if (
-            el.storeTag[j].name === props.conditionActive[i] &&
-            el.storeTag.length === props.conditionActive.length - 1
-          ) {
-            return el;
-          }
+  //   for (let i = 1; i < props.conditionActive.length; i++) {
+  //     dataCondition = dataCondition?.filter((el) => {
+  //       for (let j = 0; j < el.storeTag.length; j++) {
+  //         if (
+  //           el.storeTag[j].name === props.conditionActive[i] &&
+  //           el.storeTag.length === props.conditionActive.length - 1
+  //         ) {
+  //           return el;
+  //         }
+  //       }
+  //     });
+  //   }
+  //   data = dataCondition;
+  // }
+  if (props.conditionActive.length > 1) {
+    const dataCondition = data?.filter((el: any) => {
+      for (let i = 1; i < props.conditionActive.length; i++) {
+        if (el.storeTag.includes(props.conditionActive[i])) {
+          return el;
         }
-      });
-    }
+      }
+    });
     data = dataCondition;
   }
 
@@ -175,7 +185,12 @@ export default function CafeListUI(props: ICafeListUIProps) {
                       {el.storeTag.map((el) => (
                         <span
                           key={uuidv4()}
-                          style={{ marginRight: "1rem" }}
+                          style={{
+                            marginRight: "1rem",
+                            color: props.conditionActive.includes(el.name)
+                              ? "red"
+                              : "orange",
+                          }}
                         >{`# ${el.name}`}</span>
                       ))}
                     </CafeList.SelectTag>
